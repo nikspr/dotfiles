@@ -12,8 +12,7 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.renderControlCharacters": true,
     "editor.rulers": [
-        80,
-        120
+      120
     ],
     "editor.showFoldingControls": "always",
     "editor.snippetSuggestions": "top",
@@ -56,20 +55,17 @@
         "**/tmp/**": true,
         "**/vendor/**": true
     },
-    "git.enabled": false,
+    "git.enabled":  true,
     "notebook.diff.ignoreMetadata": true,
     "notebook.lineNumbers": "on",
     "notebook.markup.fontSize": 13,
-    "python.defaultInterpreterPath": "~/.pyenv/shims/python",
+    "python.defaultInterpreterPath": "/usr/bin/python3",
     "python.formatting.provider": "yapf",
     "python.languageServer": "Pylance",
     "python.linting.enabled": false,
     "python.linting.flake8Enabled": false,
     "python.linting.pylintEnabled": false,
     "python.terminal.activateEnvironment": false,
-    "ruby.lint": {
-        "rubocop": true
-    },
     "search.exclude": {
       // Inherits all glob patterns from the `files.exclude` setting.
       "**/.venv": true
@@ -77,11 +73,38 @@
     "telemetry.telemetryLevel": "off",
     "window.restoreWindows": "none",
     "window.newWindowDimensions": "maximized",
-    "workbench.editor.enablePreview": true,
-    "workbench.iconTheme": "vscode-great-icons",
     "workbench.settings.editor": "json",
     "workbench.settings.openDefaultSettings": true,
     "workbench.settings.useSplitJSON": true,
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.panel.defaultLocation": "right",
+    "workbench.panel.defaultLocation": "bottom",
+
+    "[ruby]": {
+      "editor.defaultFormatter": "Shopify.ruby-lsp",
+      "editor.formatOnSave": true,
+      "editor.formatOnType": true,
+      "editor.tabSize": 2,
+      "editor.insertSpaces": true,
+      "editor.semanticHighlighting.enabled": true
+    },
+    "git.openRepositoryInParentFolders": "always",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "terminal.integrated.env.osx": {
+      "FIG_NEW_SESSION": "1"
+    },
+    "editor.accessibilitySupport": "off",
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.automationProfile.linux": {
+
+    },
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "tabnine.experimentalAutoImports": true,
+    "window.nativeTabs": true,
+    "window.zoomLevel": -1,
+    "sorbet.enabled": true,
+    "sorbet.highlightUntyped": true,
+    "git.confirmSync": false,
+    "workbench.colorTheme": "Spinel",
+    "git.enableSmartCommit": true,
+    "explorer.confirmDragAndDrop": false,
 }
